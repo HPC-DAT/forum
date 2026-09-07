@@ -24,8 +24,8 @@
 		}
 	}
 
-	function startOAuth() {
-		auth.beginOAuth(`${location.origin}${resolve('/auth/callback')}`);
+	async function startOAuth() {
+		await auth.beginOAuth(`${location.origin}${resolve('/auth/callback')}`);
 	}
 
 	function close() {

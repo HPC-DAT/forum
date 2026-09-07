@@ -1,65 +1,38 @@
-# OAuth token-exchange proxy
+# HPC-DAT forum authentication proxy
 
-Enables the "Continue with GitHub" button on the forum. GitHub's token
-endpoint blocks browser CORS, so this ~50-line Cloudflare Worker swaps the
-OAuth `code` for an access token. It stores the client secret and returns
-`{ access_token }` — nothing else. Free-tier Workers are more than enough.
+This Cloudflare Worker exchanges browser authorization codes and refresh tokens for
+repository-scoped GitHub App user tokens. The App client secret remains in Cloudflare.
 
-## 1. Create a GitHub OAuth app
+## GitHub App
 
-[github.com/settings/developers](https://github.com/settings/developers) → *New OAuth App*:
+Create an organization-owned GitHub App with:
 
-- **Homepage URL**: `https://<user>.github.io/<repo>`
-- **Authorization callback URL**: `https://<user>.github.io/<repo>/auth/callback`
+- Homepage URL: `https://hpc-dat.github.io/forum/`
+- Callback URL: `https://hpc-dat.github.io/forum/auth/callback`
+- Metadata permission: read
+- Discussions permission: read and write
+- User access token expiration: enabled
+- Installation: only `HPC-DAT/forum`
 
-Save the **Client ID** and generate a **Client Secret**.
+No webhook or private key is needed for this user-to-server flow.
 
-## 2. Deploy the Worker
+## Worker
 
-### Option A — wrangler CLI
+Set these non-secret variables in `wrangler.toml` or the Cloudflare dashboard:
+
+- `ALLOWED_ORIGINS=https://hpc-dat.github.io,http://localhost:5173`
+- `GITHUB_CLIENT_ID=<GitHub App client ID>`
+- `GITHUB_REPOSITORY_ID=R_kgDOUQngdQ`
+
+Set the secret and deploy:
 
 ```sh
-cd oauth-proxy
-# edit wrangler.toml: set ALLOWED_ORIGINS (CSV) and GITHUB_CLIENT_ID
 npx wrangler login
+npx wrangler secret put GITHUB_CLIENT_SECRET
 npx wrangler deploy
-npx wrangler secret put GITHUB_CLIENT_SECRET   # paste the secret when prompted
 ```
 
-The deploy output prints your Worker URL, e.g.
-`https://discussion-kit-oauth.<account>.workers.dev`.
-
-### Option B — Cloudflare dashboard (no CLI)
-
-1. [dash.cloudflare.com](https://dash.cloudflare.com) → *Workers & Pages* → *Create Worker* → deploy the hello-world, then *Edit code* and paste `worker.js`.
-2. Under *Settings → Variables and Secrets* add:
-   - `ALLOWED_ORIGINS` (text) — comma-separated, e.g. `https://<user>.github.io,http://localhost:5173`
-   - `GITHUB_CLIENT_ID` (text)
-   - `GITHUB_CLIENT_SECRET` (**secret**)
-3. Deploy and note the `*.workers.dev` URL.
-
-## 3. Point the forum at it
-
-In `forum.config.ts`:
-
-```ts
-auth: {
-	oauth: {
-		clientId: '<your client id>',
-		proxyUrl: 'https://discussion-kit-oauth.<account>.workers.dev'
-	}
-}
-```
-
-Push, let Pages redeploy, and the sign-in dialog now shows
-**Continue with GitHub** (token sign-in is automatically disabled once
-OAuth is configured).
-
-## Notes
-
-- The Worker rejects requests whose `Origin` isn't in `ALLOWED_ORIGINS`, so other
-  sites can't use your proxy. (This is CSRF protection, not a secret — the
-  forum also validates an OAuth `state` nonce client-side.)
-- For local dev, include `http://localhost:5173` in `ALLOWED_ORIGINS`.
-- Tokens are issued with the `public_repo` scope, which is what lets users
-  read and post to Discussions on public repositories.
+Finally set the GitHub App client ID and deployed Worker URL in `forum.config.ts`.
+The browser authorization uses PKCE and the Worker restricts the resulting token to
+the forum repository ID. Access tokens expire after eight hours and are refreshed
+through the same Worker.

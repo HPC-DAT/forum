@@ -2,7 +2,11 @@ import { beforeEach, describe, expect, it, vi, type Mock } from 'vitest';
 
 const { mockConfig, mockAuth, invalidateCache } = vi.hoisted(() => {
 	const invalidateCache = vi.fn();
-	const mockAuth = { token: 'tok' as string | null, signOut: vi.fn() };
+	const mockAuth = {
+		token: 'tok' as string | null,
+		getToken: vi.fn(async () => mockAuth.token),
+		signOut: vi.fn()
+	};
 	const mockConfig = {
 		repo: { owner: 'o', name: 'r' },
 		content: {
@@ -62,6 +66,7 @@ const cat = (slug: string) => ({
 beforeEach(async () => {
 	vi.resetModules();
 	mockAuth.token = 'tok';
+	mockAuth.getToken.mockClear();
 	mockAuth.signOut.mockClear();
 	mockConfig.content.topics.include = [];
 	mockConfig.content.topics.exclude = [];

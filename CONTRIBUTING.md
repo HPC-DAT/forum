@@ -1,12 +1,12 @@
-# Contributing to Discussion Kit
+# Contributing to the HPC-DAT Community Forum
 
 Thanks for your interest in contributing! Bug reports, feature ideas, and pull requests are all welcome. This document explains how to get set up and what a pull request needs to be accepted.
 
 ## Getting started
 
 ```sh
-git clone https://github.com/NotReeceHarris/discussion-kit.git
-cd discussion-kit
+git clone https://github.com/HPC-DAT/forum.git
+cd forum
 npm install
 npm run dev
 ```
@@ -68,7 +68,7 @@ npm run test:coverage   # prints a summary; full HTML report in coverage/index.h
 
 ## Reporting bugs & suggesting features
 
-Open an [issue](https://github.com/NotReeceHarris/discussion-kit/issues) with:
+Open an [issue](https://github.com/HPC-DAT/forum/issues) with:
 
 - What you did, what you expected, and what actually happened
 - Browser and OS if it's a UI issue

@@ -5,9 +5,9 @@ import { configIncomplete, forumConfig, themeCss } from '$lib/config';
 // defaults, repo fallback applied, theme compiled.
 describe('resolved config', () => {
 	it('merges the root forum.config.ts over defaults', () => {
-		expect(forumConfig.repo.owner).toBe('NotReeceHarris');
-		expect(forumConfig.repo.name).toBe('discussion-kit');
-		expect(forumConfig.site.name).toBe('Discussion Kit');
+		expect(forumConfig.repo.owner).toBe('HPC-DAT');
+		expect(forumConfig.repo.name).toBe('forum');
+		expect(forumConfig.site.name).toBe('HPC-DAT Community');
 		// default that forum.config.ts does not override
 		expect(forumConfig.content.articles.marker).toBe('<!-- dk:article -->');
 	});
@@ -16,7 +16,8 @@ describe('resolved config', () => {
 		expect(configIncomplete).toBe(false);
 	});
 
-	it('compiles theme overrides (none in the shipped config)', () => {
-		expect(themeCss).toBe('');
+	it('compiles the HPC-DAT theme overrides', () => {
+		expect(themeCss).toContain('--fd-primary:hsl(190 70% 36%)');
+		expect(themeCss).toContain('.dark{');
 	});
 });

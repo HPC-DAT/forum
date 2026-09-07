@@ -38,6 +38,8 @@ export interface ForumConfig {
 		description: string;
 		/** Optional emoji used as the header logo instead of the default icon */
 		logo: string;
+		/** Optional image URL used in preference to the emoji */
+		logoUrl: string;
 		/** Optional footer line (supports no markup, plain text) */
 		footer: string;
 	};
@@ -196,6 +198,7 @@ export const defaultConfig: ForumConfig = {
 		name: 'Discussion Kit',
 		description: 'A community forum powered by GitHub Discussions',
 		logo: '',
+		logoUrl: '',
 		footer: ''
 	},
 	repo: {

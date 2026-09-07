@@ -2,7 +2,7 @@
 
 ## Supported versions
 
-Discussion Kit is deployed as a static site straight from `main`; there are no maintained release branches. Only the latest code on `main` receives security fixes — forks should pull regularly to stay patched.
+The HPC-DAT forum is deployed as a static site straight from `main`; there are no maintained release branches. Only the latest code on `main` receives security fixes.
 
 | Version | Supported |
 | --- | --- |
@@ -13,10 +13,9 @@ Discussion Kit is deployed as a static site straight from `main`; there are no m
 
 **Please do not open a public issue for security vulnerabilities.**
 
-Instead, use one of these private channels:
+Instead, use this private channel:
 
-1. **GitHub private vulnerability reporting** (preferred): [Report a vulnerability](https://github.com/NotReeceHarris/discussion-kit/security/advisories/new) on this repository.
-2. **Email**: [me@reeceharris.net](mailto:me@reeceharris.net) with a subject starting with `[SECURITY]`.
+Use **GitHub private vulnerability reporting**: [Report a vulnerability](https://github.com/HPC-DAT/forum/security/advisories/new) on this repository.
 
 Include as much of the following as you can:
 

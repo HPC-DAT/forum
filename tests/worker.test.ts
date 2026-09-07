@@ -4,7 +4,8 @@ import worker, { parseAllowedOrigins } from '../oauth-proxy/worker.js';
 const env = {
 	ALLOWED_ORIGINS: 'https://user.github.io, http://localhost:5173/',
 	GITHUB_CLIENT_ID: 'cid',
-	GITHUB_CLIENT_SECRET: 'secret'
+	GITHUB_CLIENT_SECRET: 'secret',
+	GITHUB_REPOSITORY_ID: 'R_123'
 };
 
 const req = (opts: { method?: string; origin?: string | null; body?: unknown } = {}) =>
@@ -16,7 +17,13 @@ const req = (opts: { method?: string; origin?: string | null; body?: unknown } =
 				? undefined
 				: typeof opts.body === 'string'
 					? opts.body
-					: JSON.stringify(opts.body ?? { code: 'abc' })
+				: JSON.stringify(
+						opts.body ?? {
+							code: 'abc',
+							code_verifier: 'verifier',
+							redirect_uri: 'https://user.github.io/forum/auth/callback'
+						}
+					)
 	});
 
 let fetchMock: Mock;
@@ -67,17 +74,59 @@ describe('worker fetch', () => {
 		expect((await worker.fetch(req({ origin, body: { code: 42 } }), env)).status).toBe(400);
 	});
 
+	it('rejects requests when server configuration is incomplete', async () => {
+		const res = await worker.fetch(req({ origin: 'https://user.github.io' }), {
+			...env,
+			GITHUB_REPOSITORY_ID: ''
+		});
+		expect(res.status).toBe(500);
+	});
+
 	it('exchanges the code and returns only the access token', async () => {
 		fetchMock.mockResolvedValue({
 			ok: true,
-			json: async () => ({ access_token: 'tok', scope: 'public_repo', extra: 'x' })
+			json: async () => ({
+				access_token: 'tok',
+				expires_in: 3600,
+				refresh_token: 'refresh',
+				refresh_token_expires_in: 7200,
+				extra: 'x'
+			})
 		});
 		const res = await worker.fetch(req({ origin: 'https://user.github.io' }), env);
 		expect(res.status).toBe(200);
-		expect(await res.json()).toEqual({ access_token: 'tok' });
+		expect(await res.json()).toEqual({
+			access_token: 'tok',
+			expires_in: 3600,
+			refresh_token: 'refresh',
+			refresh_token_expires_in: 7200
+		});
 		expect(res.headers.get('Access-Control-Allow-Origin')).toBe('https://user.github.io');
+		expect(res.headers.get('Cache-Control')).toBe('no-store');
 		const body = JSON.parse(fetchMock.mock.calls[0][1].body);
-		expect(body).toEqual({ client_id: 'cid', client_secret: 'secret', code: 'abc' });
+		expect(body).toEqual({
+			client_id: 'cid',
+			client_secret: 'secret',
+			code: 'abc',
+			code_verifier: 'verifier',
+			redirect_uri: 'https://user.github.io/forum/auth/callback',
+			repository_id: 'R_123'
+		});
+	});
+
+	it('refreshes an expiring GitHub App user token', async () => {
+		fetchMock.mockResolvedValue({ ok: true, json: async () => ({ access_token: 'new' }) });
+		const res = await worker.fetch(
+			req({ origin: 'https://user.github.io', body: { refresh_token: 'refresh' } }),
+			env
+		);
+		expect(await res.json()).toEqual({ access_token: 'new' });
+		expect(JSON.parse(fetchMock.mock.calls[0][1].body)).toEqual({
+			client_id: 'cid',
+			client_secret: 'secret',
+			grant_type: 'refresh_token',
+			refresh_token: 'refresh'
+		});
 	});
 
 	it('maps GitHub transport failures to 502', async () => {

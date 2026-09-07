@@ -47,6 +47,7 @@ describe('mergeConfig', () => {
 	it('does not mutate the defaults', () => {
 		mergeConfig({ site: { name: 'Mutant' } });
 		expect(defaultConfig.site.name).toBe('Discussion Kit');
+		expect(defaultConfig.site.logoUrl).toBe('');
 	});
 });
 

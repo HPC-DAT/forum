@@ -35,13 +35,14 @@ async function gql<T>(
 		tolerateNotFound?: boolean;
 	} = {}
 ): Promise<T> {
-	if (!auth.token) {
+	const token = await auth.getToken();
+	if (!token) {
 		throw new GitHubError('Sign in to browse the forum — GitHub Discussions requires an API token.', 401);
 	}
 	const res = await fetch('https://api.github.com/graphql', {
 		method: 'POST',
 		headers: {
-			Authorization: `Bearer ${auth.token}`,
+			Authorization: `Bearer ${token}`,
 			'Content-Type': 'application/json'
 		},
 		body: JSON.stringify({ query, variables })
@@ -517,10 +518,11 @@ export async function renderMarkdown(
 	text: string,
 	opts: { context?: string; mode?: 'gfm' | 'markdown' } = {}
 ): Promise<string> {
+	const token = await auth.getToken();
 	const res = await fetch('https://api.github.com/markdown', {
 		method: 'POST',
 		headers: {
-			...(auth.token ? { Authorization: `Bearer ${auth.token}` } : {}),
+			...(token ? { Authorization: `Bearer ${token}` } : {}),
 			'Content-Type': 'application/json'
 		},
 		body: JSON.stringify({

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
+	import { base, resolve } from '$app/paths';
 	import { goto } from '$app/navigation';
 	import { forumConfig } from '$lib/config';
 	import { auth } from '$lib/github/auth.svelte';
@@ -19,7 +19,13 @@
 >
 	<div class="mx-auto flex h-14 max-w-[1400px] items-center gap-4 px-4">
 		<a href={resolve('/')} class="flex items-center gap-2.5 font-semibold tracking-tight">
-			{#if forumConfig.site.logo}
+			{#if forumConfig.site.logoUrl}
+				<img
+					src={`${base}${forumConfig.site.logoUrl}`}
+					alt=""
+					class="size-9 rounded-full object-cover"
+				/>
+			{:else if forumConfig.site.logo}
 				<span class="text-lg leading-none">{forumConfig.site.logo}</span>
 			{:else}
 				<svg class="size-5" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">

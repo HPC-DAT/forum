@@ -5,7 +5,7 @@ const env = {
 	ALLOWED_ORIGINS: 'https://user.github.io, http://localhost:5173/',
 	GITHUB_CLIENT_ID: 'cid',
 	GITHUB_CLIENT_SECRET: 'secret',
-	GITHUB_REPOSITORY_ID: 'R_123'
+	GITHUB_REPOSITORY_ID: '123'
 };
 
 const req = (opts: { method?: string; origin?: string | null; body?: unknown } = {}) =>
@@ -110,7 +110,7 @@ describe('worker fetch', () => {
 			code: 'abc',
 			code_verifier: 'verifier',
 			redirect_uri: 'https://user.github.io/forum/auth/callback',
-			repository_id: 'R_123'
+			repository_id: '123'
 		});
 	});
 

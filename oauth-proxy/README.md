@@ -22,7 +22,7 @@ Set these non-secret variables in `wrangler.toml` or the Cloudflare dashboard:
 
 - `ALLOWED_ORIGINS=https://hpc-dat.github.io,http://localhost:5173`
 - `GITHUB_CLIENT_ID=<GitHub App client ID>`
-- `GITHUB_REPOSITORY_ID=R_kgDOUQngdQ`
+- `GITHUB_REPOSITORY_ID=1359601781`
 
 Set the secret and deploy:
 

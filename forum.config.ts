@@ -22,9 +22,8 @@ export default defineForumConfig({
 	auth: {
 		allowToken: true,
 		oauth: {
-			// Set these after deploying the organization-owned GitHub App and Worker.
-			clientId: '',
-			proxyUrl: ''
+			clientId: 'Iv23li5HMbsnxhnAHYeH',
+			proxyUrl: 'https://hpc-dat-forum-auth.m-grootes.workers.dev'
 		}
 	},
 
@@ -40,8 +39,7 @@ export default defineForumConfig({
 		topics: {
 			include: [],
 			exclude: ['polls'],
-			// `announcements` remains during migration and becomes `news` when renamed.
-			restricted: ['announcements', 'news']
+			restricted: ['news']
 		}
 	},
 

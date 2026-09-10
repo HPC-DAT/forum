@@ -44,8 +44,8 @@ https://hpc-dat.github.io/forum/auth/callback
 
 Deploy [`oauth-proxy/worker.js`](oauth-proxy/worker.js) to Cloudflare, set the values
 described in [`oauth-proxy/README.md`](oauth-proxy/README.md), then place the public
-client ID and Worker URL in `forum.config.ts`. Fine-grained PAT login remains the
-fallback until those values are configured.
+client ID and Worker URL in `forum.config.ts`. The production forum uses this GitHub
+App flow exclusively.
 
 ## Upstream
 

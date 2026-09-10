@@ -20,7 +20,7 @@ export default defineForumConfig({
 	],
 
 	auth: {
-		allowToken: true,
+		allowToken: false,
 		oauth: {
 			clientId: 'Iv23li5HMbsnxhnAHYeH',
 			proxyUrl: 'https://hpc-dat-forum-auth.m-grootes.workers.dev'

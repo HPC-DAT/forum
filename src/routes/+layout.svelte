@@ -7,12 +7,13 @@
 	import { auth } from '$lib/github/auth.svelte';
 	import { configIncomplete, forumConfig, themeCss } from '$lib/config';
 	import { archiveMode, loadOverview, loadRep, ui } from '$lib/ui.svelte';
+	import { onMount } from 'svelte';
 
 	let { children } = $props();
 
-	$effect(() => {
+	onMount(() => {
 		if (configIncomplete) return;
-		auth.init();
+		void auth.init();
 	});
 
 	// forum data needs an authenticated GraphQL call; one combined query

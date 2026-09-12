@@ -1,0 +1,92 @@
+{
+	"id": "D_kwDOUQngdc4ApD0g",
+	"number": 7,
+	"title": "Welcome to the HPC-DAT community forum",
+	"body": "This forum is a place for researchers to ask practical questions, share scalable workflows, propose ideas, and follow HPC-DAT news.\n\nBefore posting, choose the topic that best fits your contribution. Use **Questions and Help** for questions that can have an accepted answer, **Ideas and Feedback** for suggestions, and **Use Cases and Showcases** for workflows or results.\n\nPlease follow our [Code of Conduct](https://github.com/HPC-DAT/forum/blob/main/CODE_OF_CONDUCT.md). Include enough context for others to reproduce a technical problem, but never post credentials, access tokens, private data, or sensitive cluster information.",
+	"bodyHTML": "<p dir=\"auto\">This forum is a place for researchers to ask practical questions, share scalable workflows, propose ideas, and follow HPC-DAT news.</p>\n<p dir=\"auto\">Before posting, choose the topic that best fits your contribution. Use <strong>Questions and Help</strong> for questions that can have an accepted answer, <strong>Ideas and Feedback</strong> for suggestions, and <strong>Use Cases and Showcases</strong> for workflows or results.</p>\n<p dir=\"auto\">Please follow our <a href=\"https://github.com/HPC-DAT/forum/blob/main/CODE_OF_CONDUCT.md\">Code of Conduct</a>. Include enough context for others to reproduce a technical problem, but never post credentials, access tokens, private data, or sensitive cluster information.</p>",
+	"url": "https://github.com/HPC-DAT/forum/discussions/7",
+	"createdAt": "2026-09-07T00:37:57Z",
+	"lastEditedAt": "2026-09-07T00:41:23Z",
+	"upvoteCount": 1,
+	"viewerHasUpvoted": false,
+	"locked": false,
+	"author": {
+		"login": "meiertgrootes",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+		"url": "https://github.com/meiertgrootes"
+	},
+	"category": {
+		"id": "DIC_kwDOUQngdc4DFCLR",
+		"name": "General",
+		"slug": "general",
+		"emojiHTML": "<div>💬</div>",
+		"description": "Chat about anything and everything here",
+		"isAnswerable": false
+	},
+	"reactionGroups": [
+		{
+			"content": "THUMBS_UP",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "THUMBS_DOWN",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "LAUGH",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "HOORAY",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "CONFUSED",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "HEART",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "ROCKET",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "EYES",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		}
+	],
+	"comments": {
+		"totalCount": 0,
+		"pageInfo": {
+			"endCursor": null,
+			"hasNextPage": false
+		},
+		"nodes": []
+	}
+}

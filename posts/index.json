@@ -1,0 +1,159 @@
+{
+	"archivedAt": "2026-09-12T14:53:20.282Z",
+	"discussions": [
+		{
+			"id": "D_kwDOUQngdc4ApD0g",
+			"number": 7,
+			"title": "Welcome to the HPC-DAT community forum",
+			"body": "This forum is a place for researchers to ask practical questions, share scalable workflows, propose ideas, and follow HPC-DAT news.\n\nBefore posting, choose the topic that best fits your contribution. Use **Questions and Help** for questions that can have an accepted answer, **Ideas and Feedback** for suggestions, and **Use Cases and Showcases** for workflows or results.\n\nPlease follow our [Code of Conduct](https://github.com/HPC-DAT/forum/blob/main/CODE_OF_CONDUCT.md). Include enough context for others to reproduce a technical problem, but never post credentials, access tokens, private data, or sensitive cluster information.",
+			"createdAt": "2026-09-07T00:37:57Z",
+			"upvoteCount": 1,
+			"author": {
+				"login": "meiertgrootes",
+				"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+				"url": "https://github.com/meiertgrootes"
+			},
+			"category": {
+				"id": "DIC_kwDOUQngdc4DFCLR",
+				"name": "General",
+				"slug": "general",
+				"emojiHTML": "<div>💬</div>"
+			},
+			"comments": {
+				"totalCount": 0
+			}
+		},
+		{
+			"id": "D_kwDOUQngdc4ApD0f",
+			"number": 6,
+			"title": "Fall and winter workshops: dates coming soon",
+			"body": "We are finalizing workshop dates for the fall and winter period. Announcements are coming soon, so watch this space.",
+			"createdAt": "2026-09-07T00:37:44Z",
+			"upvoteCount": 1,
+			"author": {
+				"login": "meiertgrootes",
+				"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+				"url": "https://github.com/meiertgrootes"
+			},
+			"category": {
+				"id": "DIC_kwDOUQngdc4DFCLQ",
+				"name": "News",
+				"slug": "news",
+				"emojiHTML": "<div>📣</div>"
+			},
+			"comments": {
+				"totalCount": 0
+			}
+		},
+		{
+			"id": "D_kwDOUQngdc4ApD0e",
+			"number": 5,
+			"title": "HPC-DAT tutorial at the EO Council autumn school, Delft, 6 November 2026",
+			"body": "HPC-DAT will contribute a tutorial session to the autumn school organized by the EO Council in Delft on 6 November 2026.",
+			"createdAt": "2026-09-07T00:37:43Z",
+			"upvoteCount": 1,
+			"author": {
+				"login": "meiertgrootes",
+				"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+				"url": "https://github.com/meiertgrootes"
+			},
+			"category": {
+				"id": "DIC_kwDOUQngdc4DFCLQ",
+				"name": "News",
+				"slug": "news",
+				"emojiHTML": "<div>📣</div>"
+			},
+			"comments": {
+				"totalCount": 0
+			}
+		},
+		{
+			"id": "D_kwDOUQngdc4ApD0d",
+			"number": 4,
+			"title": "Second user committee meeting, Amsterdam, 10 September 2026",
+			"body": "The second user committee meeting is scheduled for 10 September 2026 in Amsterdam.\n\nWe look forward to presenting the project’s initial progress and results and gathering feedback from our broader user community.",
+			"createdAt": "2026-09-07T00:37:42Z",
+			"upvoteCount": 1,
+			"author": {
+				"login": "meiertgrootes",
+				"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+				"url": "https://github.com/meiertgrootes"
+			},
+			"category": {
+				"id": "DIC_kwDOUQngdc4DFCLQ",
+				"name": "News",
+				"slug": "news",
+				"emojiHTML": "<div>📣</div>"
+			},
+			"comments": {
+				"totalCount": 0
+			}
+		},
+		{
+			"id": "D_kwDOUQngdc4ApD0c",
+			"number": 3,
+			"title": "Open hackathon: high-performance computing with Python and RS-DAT, Utrecht, 27-29 May 2026",
+			"body": "Get support adopting RS-DAT and developing Dask and PyData skills during this open hackathon in Utrecht.\n\n[Hackathon information](https://www.surf.nl/en/agenda/hackathon-high-performance-computing-with-python-and-rs-dat)",
+			"createdAt": "2026-09-07T00:37:41Z",
+			"upvoteCount": 1,
+			"author": {
+				"login": "meiertgrootes",
+				"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+				"url": "https://github.com/meiertgrootes"
+			},
+			"category": {
+				"id": "DIC_kwDOUQngdc4DFCLQ",
+				"name": "News",
+				"slug": "news",
+				"emojiHTML": "<div>📣</div>"
+			},
+			"comments": {
+				"totalCount": 0
+			}
+		},
+		{
+			"id": "D_kwDOUQngdc4ApD0b",
+			"number": 2,
+			"title": "High-performance computing with Python and RS-DAT workshop, Utrecht, 19 March 2026",
+			"body": "Learn how to scale Python data analysis to clusters and supercomputers with RS-DAT, Dask, Jupyter, and PyData tooling.\n\n[Workshop information](https://www.surf.nl/en/agenda/high-performance-computing-with-python-and-rs-dat)",
+			"createdAt": "2026-09-07T00:37:40Z",
+			"upvoteCount": 1,
+			"author": {
+				"login": "meiertgrootes",
+				"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+				"url": "https://github.com/meiertgrootes"
+			},
+			"category": {
+				"id": "DIC_kwDOUQngdc4DFCLQ",
+				"name": "News",
+				"slug": "news",
+				"emojiHTML": "<div>📣</div>"
+			},
+			"comments": {
+				"totalCount": 0
+			}
+		},
+		{
+			"id": "D_kwDOUQngdc4ApD0a",
+			"number": 1,
+			"title": "Inaugural HPC-DAT user committee meeting, Amsterdam, 13 February 2026",
+			"body": "The inaugural user committee meeting of the HPC-DAT project took place in Amsterdam on 13 February 2026.\n\nThe user committee helps ensure that the training and technical development delivered by HPC-DAT stay aligned with the needs of the scientific community.",
+			"createdAt": "2026-09-07T00:37:39Z",
+			"upvoteCount": 1,
+			"author": {
+				"login": "meiertgrootes",
+				"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+				"url": "https://github.com/meiertgrootes"
+			},
+			"category": {
+				"id": "DIC_kwDOUQngdc4DFCLQ",
+				"name": "News",
+				"slug": "news",
+				"emojiHTML": "<div>📣</div>"
+			},
+			"comments": {
+				"totalCount": 0
+			}
+		}
+	]
+}

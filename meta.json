@@ -1,0 +1,77 @@
+{
+	"archivedAt": "2026-09-12T14:53:20.282Z",
+	"categories": [
+		{
+			"id": "DIC_kwDOUQngdc4DFCLR",
+			"name": "General",
+			"slug": "general",
+			"emojiHTML": "<div>💬</div>",
+			"description": "Chat about anything and everything here",
+			"isAnswerable": false
+		},
+		{
+			"id": "DIC_kwDOUQngdc4DFCLT",
+			"name": "Ideas and Feedback",
+			"slug": "ideas-and-feedback",
+			"emojiHTML": "<div>💡</div>",
+			"description": "Share ideas and feedback for the future",
+			"isAnswerable": false
+		},
+		{
+			"id": "DIC_kwDOUQngdc4DFCLQ",
+			"name": "News",
+			"slug": "news",
+			"emojiHTML": "<div>📣</div>",
+			"description": "Updates from maintainers",
+			"isAnswerable": false
+		},
+		{
+			"id": "DIC_kwDOUQngdc4DFCLV",
+			"name": "Polls",
+			"slug": "polls",
+			"emojiHTML": "<div>🗳️</div>",
+			"description": "Take a vote from the community",
+			"isAnswerable": false
+		},
+		{
+			"id": "DIC_kwDOUQngdc4DFCLS",
+			"name": "Questions and Help",
+			"slug": "questions-and-help",
+			"emojiHTML": "<div>🙏</div>",
+			"description": "Ask the community for help",
+			"isAnswerable": true
+		},
+		{
+			"id": "DIC_kwDOUQngdc4DFCLU",
+			"name": "Use cases and Showcases",
+			"slug": "use-cases-and-showcases",
+			"emojiHTML": "<div>🙌</div>",
+			"description": "Show off something you've made",
+			"isAnswerable": false
+		}
+	],
+	"pinned": [
+		{
+			"id": "D_kwDOUQngdc4ApD0g",
+			"number": 7,
+			"title": "Welcome to the HPC-DAT community forum",
+			"body": "This forum is a place for researchers to ask practical questions, share scalable workflows, propose ideas, and follow HPC-DAT news.\n\nBefore posting, choose the topic that best fits your contribution. Use **Questions and Help** for questions that can have an accepted answer, **Ideas and Feedback** for suggestions, and **Use Cases and Showcases** for workflows or results.\n\nPlease follow our [Code of Conduct](https://github.com/HPC-DAT/forum/blob/main/CODE_OF_CONDUCT.md). Include enough context for others to reproduce a technical problem, but never post credentials, access tokens, private data, or sensitive cluster information.",
+			"createdAt": "2026-09-07T00:37:57Z",
+			"upvoteCount": 1,
+			"author": {
+				"login": "meiertgrootes",
+				"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+				"url": "https://github.com/meiertgrootes"
+			},
+			"category": {
+				"id": "DIC_kwDOUQngdc4DFCLR",
+				"name": "General",
+				"slug": "general",
+				"emojiHTML": "<div>💬</div>"
+			},
+			"comments": {
+				"totalCount": 0
+			}
+		}
+	]
+}

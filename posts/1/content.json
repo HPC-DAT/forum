@@ -1,0 +1,92 @@
+{
+	"id": "D_kwDOUQngdc4ApD0a",
+	"number": 1,
+	"title": "Inaugural HPC-DAT user committee meeting, Amsterdam, 13 February 2026",
+	"body": "The inaugural user committee meeting of the HPC-DAT project took place in Amsterdam on 13 February 2026.\n\nThe user committee helps ensure that the training and technical development delivered by HPC-DAT stay aligned with the needs of the scientific community.",
+	"bodyHTML": "<p dir=\"auto\">The inaugural user committee meeting of the HPC-DAT project took place in Amsterdam on 13 February 2026.</p>\n<p dir=\"auto\">The user committee helps ensure that the training and technical development delivered by HPC-DAT stay aligned with the needs of the scientific community.</p>",
+	"url": "https://github.com/HPC-DAT/forum/discussions/1",
+	"createdAt": "2026-09-07T00:37:39Z",
+	"lastEditedAt": null,
+	"upvoteCount": 1,
+	"viewerHasUpvoted": false,
+	"locked": false,
+	"author": {
+		"login": "meiertgrootes",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+		"url": "https://github.com/meiertgrootes"
+	},
+	"category": {
+		"id": "DIC_kwDOUQngdc4DFCLQ",
+		"name": "News",
+		"slug": "news",
+		"emojiHTML": "<div>📣</div>",
+		"description": "Updates from maintainers",
+		"isAnswerable": false
+	},
+	"reactionGroups": [
+		{
+			"content": "THUMBS_UP",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "THUMBS_DOWN",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "LAUGH",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "HOORAY",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "CONFUSED",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "HEART",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "ROCKET",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "EYES",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		}
+	],
+	"comments": {
+		"totalCount": 0,
+		"pageInfo": {
+			"endCursor": null,
+			"hasNextPage": false
+		},
+		"nodes": []
+	}
+}

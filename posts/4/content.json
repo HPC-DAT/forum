@@ -1,0 +1,92 @@
+{
+	"id": "D_kwDOUQngdc4ApD0d",
+	"number": 4,
+	"title": "Second user committee meeting, Amsterdam, 10 September 2026",
+	"body": "The second user committee meeting is scheduled for 10 September 2026 in Amsterdam.\n\nWe look forward to presenting the project’s initial progress and results and gathering feedback from our broader user community.",
+	"bodyHTML": "<p dir=\"auto\">The second user committee meeting is scheduled for 10 September 2026 in Amsterdam.</p>\n<p dir=\"auto\">We look forward to presenting the project’s initial progress and results and gathering feedback from our broader user community.</p>",
+	"url": "https://github.com/HPC-DAT/forum/discussions/4",
+	"createdAt": "2026-09-07T00:37:42Z",
+	"lastEditedAt": null,
+	"upvoteCount": 1,
+	"viewerHasUpvoted": false,
+	"locked": false,
+	"author": {
+		"login": "meiertgrootes",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+		"url": "https://github.com/meiertgrootes"
+	},
+	"category": {
+		"id": "DIC_kwDOUQngdc4DFCLQ",
+		"name": "News",
+		"slug": "news",
+		"emojiHTML": "<div>📣</div>",
+		"description": "Updates from maintainers",
+		"isAnswerable": false
+	},
+	"reactionGroups": [
+		{
+			"content": "THUMBS_UP",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "THUMBS_DOWN",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "LAUGH",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "HOORAY",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "CONFUSED",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "HEART",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "ROCKET",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "EYES",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		}
+	],
+	"comments": {
+		"totalCount": 0,
+		"pageInfo": {
+			"endCursor": null,
+			"hasNextPage": false
+		},
+		"nodes": []
+	}
+}

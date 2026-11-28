@@ -1,0 +1,92 @@
+{
+	"id": "D_kwDOUQngdc4AqwaH",
+	"number": 9,
+	"title": "Registration for the Bring-your-own-problem Hackathon is Open (23, 24, 26, November)",
+	"body": "# Registration for the HPC-DAT Bring-your-own-problem Hackathon is open!\n\n### Come join us 23, 24, and 26 November 2026 at the Netherlands eScience Center for the HPC-DAT bring-your-own-problem hackathon\n\n**Registration for all days or (parts) of individual days is possible [here](https://event.surf.nl/hackathon-high-performance-computing-with-python-and-rs-dat/registration/#/participants)**\n\n- **Where:** Netherlands eScience Center, Science Park 402, 1098 XG Amsterdam (MATRIX III)\n- **When:** 23, 24, & 26 November 2026\n\nWant to \n- **Scale up with Dask:** Get support with scaling your analysis or workflow.\n- **Run your analysis on HPC:** Explore how to use the RS-DAT framework.\n- **Discuss Python workflows:** Exchange ideas about interactive Python and Python-based workflows on HPC?\n\nJoin us on **all or any** of the days. \n\n",
+	"bodyHTML": "<h1 dir=\"auto\">Registration for the HPC-DAT Bring-your-own-problem Hackathon is open!</h1>\n<h3 dir=\"auto\">Come join us 23, 24, and 26 November 2026 at the Netherlands eScience Center for the HPC-DAT bring-your-own-problem hackathon</h3>\n<p dir=\"auto\"><strong>Registration for all days or (parts) of individual days is possible <a href=\"https://event.surf.nl/hackathon-high-performance-computing-with-python-and-rs-dat/registration/#/participants\" rel=\"nofollow\">here</a></strong></p>\n<ul dir=\"auto\">\n<li><strong>Where:</strong> Netherlands eScience Center, Science Park 402, 1098 XG Amsterdam (MATRIX III)</li>\n<li><strong>When:</strong> 23, 24, &amp; 26 November 2026</li>\n</ul>\n<p dir=\"auto\">Want to</p>\n<ul dir=\"auto\">\n<li><strong>Scale up with Dask:</strong> Get support with scaling your analysis or workflow.</li>\n<li><strong>Run your analysis on HPC:</strong> Explore how to use the RS-DAT framework.</li>\n<li><strong>Discuss Python workflows:</strong> Exchange ideas about interactive Python and Python-based workflows on HPC?</li>\n</ul>\n<p dir=\"auto\">Join us on <strong>all or any</strong> of the days.</p>",
+	"url": "https://github.com/HPC-DAT/forum/discussions/9",
+	"createdAt": "2026-11-02T14:32:44Z",
+	"lastEditedAt": null,
+	"upvoteCount": 1,
+	"viewerHasUpvoted": false,
+	"locked": false,
+	"author": {
+		"login": "meiertgrootes",
+		"avatarUrl": "https://avatars.githubusercontent.com/u/42940327?u=9c71181cc053e808acd63a2cb011b1ff7d36f41f&v=4",
+		"url": "https://github.com/meiertgrootes"
+	},
+	"category": {
+		"id": "DIC_kwDOUQngdc4DFCLQ",
+		"name": "News",
+		"slug": "news",
+		"emojiHTML": "<div>📣</div>",
+		"description": "Updates from maintainers",
+		"isAnswerable": false
+	},
+	"reactionGroups": [
+		{
+			"content": "THUMBS_UP",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "THUMBS_DOWN",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "LAUGH",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "HOORAY",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "CONFUSED",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "HEART",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "ROCKET",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		},
+		{
+			"content": "EYES",
+			"viewerHasReacted": false,
+			"reactors": {
+				"totalCount": 0
+			}
+		}
+	],
+	"comments": {
+		"totalCount": 0,
+		"pageInfo": {
+			"endCursor": null,
+			"hasNextPage": false
+		},
+		"nodes": []
+	}
+}
